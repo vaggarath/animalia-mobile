@@ -1,5 +1,7 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 body {
   margin: 0;
+  /* overflow: hidden; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +12,92 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+model-viewer {
+	/* width: 1000px; */
+  position:relative;
+	width:100%;
+	height: 800px;
+  /* background-color: rgb(248, 49, 49); */
+}
+
+/* barre de chargement */
+
+model-viewer::part(default-progress-bar) {
+  height:8px;
+  background-color: #0dcaf0;
+}
+
+.night{
+  background-color:  #292b2c;
+  color:#f7f7f7 !important;
+}
+
+.night-text, .night p, .night strong{
+  color:#f7f7f7 !important;
+}
+
+#button-load {
+  background-image: url("/public/logo_pattes_transparancy_no_brand.png");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: 6% 50%;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  display: inline-block;
+  padding: 10px 18px 9px 40px;
+  font-weight: 500;
+  box-shadow: 0 0 8px rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,.25);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 100;
+}
+
+#lazy-load-poster {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hotspot{
+  background: rgb(255, 255, 255);
+  border: 2px solid #0dcaf0;
+  border-radius: 50% !important;
+  width:20px;
+  height:20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-family: Futura, Helvetica Neue, sans-serif;
+  font-size: 8px;
+  position: absolute;
+  font-weight: 700;
+}
+
+.modal-90w{
+  min-width:100%;
+  min-height: 100vh;
+}
+
+#darthTitle strong{
+  color:#292b2c !important;
+}
+
+.thumbs{
+  text-align: center;
+}
+
+.slide {
+  color:#292b2c !important;
 }
